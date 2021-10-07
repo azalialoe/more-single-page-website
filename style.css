@@ -1,0 +1,408 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/*   */
+/* general styles */
+/*   */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-weight: 400;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+body,
+ul,
+h1,
+h2,
+h3
+p {
+	margin: 0;
+	padding: 0;
+}
+
+button,
+nav,
+h3,
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+#logo,
+h1,
+h2,
+.form p {
+    font-family: 'Sirin Stencil', cursive;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+li a,
+h1,
+h2 {
+    color: #00476A;
+}
+
+h3, 
+.latestposts p,
+.bluevase p {
+    color: #222428
+}
+
+li a,
+button {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+.underline:hover,
+.underline:focus {
+    border-bottom: 2px solid #00C6FF;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+/*   */
+/* button and button hover styles */
+/*   */
+
+button {
+    color: #FFFFFF;
+    background-color: #00476A;
+    padding: 7px 20px;
+    transition-duration: 0.7s;
+    border: 3px solid transparent;
+}
+
+button:hover,
+button:focus {
+    color: #00476A;
+    background-color: #FFFFFF;
+    border: 3px solid #00C6FF;
+}
+
+/*   */
+/* header styles */
+/*   */
+
+#logo {
+    font-size: 3.3rem;
+    text-transform: uppercase;
+}
+
+header {
+    background-image: url(./Assets/header-image.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin-top: -35px;
+}
+
+h1 {
+    font-size: 6.5rem;
+    text-transform: uppercase;
+    padding-top: 3%;
+    padding-bottom: 25px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: -80px;
+    margin-right: -20px;
+}
+
+nav ul li {
+    margin: 25px;
+}
+
+/*   */
+/* latest blog posts style */
+/*   */
+
+h3 {
+    font-size: 2.7rem;
+}
+
+h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.latestposts p,
+.bluevase p {
+    font-size: 1.7rem;
+    line-height: 35px;
+} 
+
+.latestposts {
+    text-align: center;
+    position: relative;
+    padding: 0 15%;
+    margin: 75px 0;
+
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    font-size: 5rem;
+    position: absolute;
+}
+
+.fa-chevron-right {
+    right: 10%;
+    top: 50%;
+}
+.fa-chevron-left {
+    left: 10%;
+    top: 50%;
+}
+
+/*   */
+/* latest adventures section */
+/*   */
+
+.latestadventures {
+    background-color: rgb(231, 241, 243);
+    padding-bottom: 250px;
+}
+
+.latestadventures h2 {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    margin: 2%;
+    width: calc(100%/3);
+    position: relative;
+}
+
+.flex-container img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+#object-position {
+    object-fit: cover;
+}
+
+.image-container p {
+    position: absolute;
+    bottom: 5%;
+}
+
+.image-container p {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #0E191E;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+} 
+
+/*   */
+/* blue vase styles */
+/*   */
+
+.bluevase {
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.bluevase img {
+    box-shadow: 40px 40px lightblue;
+    position: absolute;
+    top: -70%;
+    width: 40%;
+}
+
+.bluevase-text {
+    margin-left: calc(60% - 40px);
+    margin-top: 100px;
+}
+
+/*   */
+/* form styles */
+/*   */
+
+.form {
+    background-color: #222428;
+    height: 100vh;
+    padding-top: 8%;
+}
+
+.form p {
+    font-size: 3.5rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form-class {
+    text-align: center;
+}
+
+input,
+textarea {
+    border: 1px solid #00C6FF;
+    background-color: transparent ;
+}
+
+input,
+textarea,
+::placeholder {
+    color:#FFFFFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+}
+
+input {
+    width: 45%;
+    height: 50px;
+    margin-left: 20px;
+    -moz-padding-start: 20px;
+}
+
+textarea {
+    width: calc(90% + 23px);
+    margin: 20px 0 0 20px;
+    padding-top: 17px;
+    height: 200px; 
+    resize: none;
+    -moz-padding-start: 20px;
+}
+
+::placeholder {
+    opacity: 1;
+    padding-left: 15px;
+}
+
+.form-class button {
+    margin-top: 20px;
+}
+
+/*   */
+/* footer styles */
+/*   */
+
+.copyright {
+    background-color: #0E191E;
+    text-align: center;
+}
+.copyright p{
+    color: #FFFFFF;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.creation {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.creation a {
+    text-decoration: none;
+    color: #00C6FF;
+} 
+
+/*   */
+/* media query styles */
+/*   */
+
+@media (max-width: 320px) {
+    
+    html {
+        font-size: 50%;
+    }
+
+    .wrapper {
+        width: 95%;
+    }
+
+    header {
+        margin: 0;
+        height: 30vh;
+        background-position: 15%;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    li a{
+        display: none;
+    }
+
+    .latestposts button {
+        margin-top: 20%;
+    }
+
+    .fa-chevron-left,
+    .fa-chevron-right {
+        font-size: 4rem;
+        top: 85%;
+    }
+
+    .fa-chevron-left {
+        left: 35%;
+    }
+
+    .fa-chevron-right {
+        right: 35%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .flex-container img {
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .image-container p {
+        position: absolute;
+        left: 40%;
+    }
+    
+}
